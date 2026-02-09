@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: klimate
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /assets/*.css
+        name: Content-Type
+        value: text/css
+      - path: /assets/*.js
+        name: Content-Type
+        value: application/javascript

@@ -20,9 +20,6 @@ const WeatherDashboard = () => {
   console.log("forecastQuery",forecastQuery.data);
   
 
-
-  //console.log("weatherquery:",weatherQuery.data,"forecastQuery",forecastQuery,"locationQuery",locationQuery);
-
   const handleRefresh=()=>{
     getLocation();
     if (coordinates){
