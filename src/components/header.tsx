@@ -1,6 +1,5 @@
 import { useTheme } from '@/context/theme-provider'
-import { Moon,  Rotate3D,  Sun } from 'lucide-react';
-import React from 'react'
+import { Moon, Sun } from 'lucide-react';
 import { Link } from 'react-router-dom'
 import { CitySearch } from './city-search';
 
